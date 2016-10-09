@@ -31,3 +31,7 @@
 ## File-based project format:
 *.ipr
 *.iws
+
+# Maven
+log/
+target/
