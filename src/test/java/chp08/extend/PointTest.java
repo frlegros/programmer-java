@@ -20,9 +20,9 @@ public class PointTest {
     public void testPoint() {
 
         pt.deplace(5,5);
-        assertEquals(pt.toString(),"Point{x=15, y=10}");
+        assertEquals(pt.toString(),"HashSetPoint{x=15, y=10}");
         pt.deplace(3,5);
-        assertEquals(pt.toString(),"Point{x=18, y=15}");
+        assertEquals(pt.toString(),"HashSetPoint{x=18, y=15}");
 
     }
 }

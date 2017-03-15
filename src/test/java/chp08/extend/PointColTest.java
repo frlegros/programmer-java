@@ -38,7 +38,7 @@ public class PointColTest {
     @Ignore
     public void testPolymorphe02(){
         // Error à la compil --> Test impossible
-        // ptCol =  new Point(2,7);
+        // ptCol =  new HashSetPoint(2,7);
         assertEquals(pt.toString(),"PointCol{couleur=5}");
         pt.affiche();
     }

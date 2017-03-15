@@ -26,12 +26,12 @@ public class Point {
 
     public void affiche() {
 
-        System.out.println("Je suis un Point en " + x + " " + y);
+        System.out.println("Je suis un HashSetPoint en " + x + " " + y);
     }
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "HashSetPoint{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

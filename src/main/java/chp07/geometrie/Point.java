@@ -14,7 +14,7 @@ public class Point {
     }
 
     public void affiche() {
-        System.out.println("Point: " + x + ", " + y);
+        System.out.println("HashSetPoint: " + x + ", " + y);
     }
 }
 
