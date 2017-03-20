@@ -1,17 +1,23 @@
-package chp23.objet;
-
-import java.io.Serializable;
+package utils.classe;
 
 /**
  * Created by frlegros on 01/03/17.
  */
-public class Point{
+public class Point {
 
     private int x, y;
+    public static int compteur=0;
+
+    public Point() {
+        this.x = 0;
+        this.y = 0;
+        compteur++;
+    }
 
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
+        compteur++;
     }
 
     public int distanceX(Point p){
