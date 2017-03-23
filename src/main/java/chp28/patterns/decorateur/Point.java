@@ -1,12 +1,10 @@
-package utils.classe;
+package chp28.patterns.decorateur;
 
-
-import chp28.patterns.decorateur.*;
 
 /**
  * Created by frlegros on 01/03/17.
  */
-public class Point{
+public class Point extends Affichable {
 
     private int x, y;
     public static int compteur=0;

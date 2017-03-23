@@ -19,4 +19,9 @@ public class PointCol extends Point {
                 "couleur=" + couleur +
                 '}';
     }
+
+    public void affiche(){
+        System.out.println(toString());
+    }
+
 }
