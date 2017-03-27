@@ -2,7 +2,6 @@ package chp28.patterns.abstrac.factory;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 /**
  * Created by frlegros on 23/03/17.
