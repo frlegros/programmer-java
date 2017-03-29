@@ -1,4 +1,4 @@
-package chp26.servlet01;
+package servlet01;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;

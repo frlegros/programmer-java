@@ -6,9 +6,13 @@
 
     <groupId>frlegros.github.com</groupId>
     <artifactId>programmer-en-java</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>chap26</module>
+    </modules>
 
-     <properties>
+    <properties>
         <log4j.properties>2.7</log4j.properties>
         <junit.properties>4.8.1</junit.properties>
         <javax.sevlet.properties>3.1.0</javax.sevlet.properties>
