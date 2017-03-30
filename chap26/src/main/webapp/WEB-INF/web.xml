@@ -4,12 +4,12 @@
 
 <web-app>
   <display-name>Test programmer java Servlet01</display-name>
-  <servlet>
-    <servlet-name>Bonjour</servlet-name>
-    <servlet-class>servlet01.Bonjour</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Bonjour</servlet-name>
-    <url-pattern>/Bonjour</url-pattern>
-  </servlet-mapping>
+  <!--<servlet>-->
+    <!--<servlet-name>Bonjour</servlet-name>-->
+    <!--<servlet-class>servlet01.Bonjour</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>Bonjour</servlet-name>-->
+    <!--<url-pattern>/hello</url-pattern>-->
+  <!--</servlet-mapping>-->
 </web-app>

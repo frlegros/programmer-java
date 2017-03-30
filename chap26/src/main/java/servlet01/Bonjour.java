@@ -1,6 +1,7 @@
 package servlet01;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,6 +9,7 @@ import java.io.PrintWriter;
 /**
  * Created by frlegros on 22/03/17.
  */
+@WebServlet("/helloyou")
 public class Bonjour extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse rep) throws ServletException, IOException {
