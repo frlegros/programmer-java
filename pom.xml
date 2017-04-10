@@ -18,6 +18,7 @@
         <javax.sevlet.properties>3.1.0</javax.sevlet.properties>
         <wildfly.maven.plugin.properties>1.1.0.Alpha5</wildfly.maven.plugin.properties>
         <maven.compiler.plugin.properties>3.6.1</maven.compiler.plugin.properties>
+        <mysql.connector.properties>5.1.6</mysql.connector.properties>
     </properties>
 
     <dependencyManagement>
@@ -39,9 +40,15 @@
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${javax.sevlet.properties}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.properties}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
-
 
     <dependencies>
         <dependency>
@@ -55,6 +62,10 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 
