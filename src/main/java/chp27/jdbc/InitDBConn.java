@@ -10,9 +10,12 @@ import java.sql.DriverManager;
  */
 public class InitDBConn {
 
-    public Connection connectDB() {
+    private String dbName;
+
+    public Connection connectDB(String dbName) {
 
         Connection conn = null;
+        this.dbName = dbName;
 
         try{
 
@@ -27,7 +30,7 @@ public class InitDBConn {
             String ip =  "localhost" ;  // dépend du contexte
             String port =  "3306" ;  // port MySQL par défaut
             // Nom de la base ;
-            String nomBase =  "java_training" ;  // dépend du contexte
+            String nomBase = this.dbName;  // dépend du contexte
             // Chaîne de connexion
             String conString = protocole +  "//" + ip +  ":" + port +  "/" + nomBase ;
             // Identifiants de connexion et mot de passe

@@ -2,6 +2,7 @@ package chp27.jdbc;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
@@ -14,7 +15,7 @@ public class TestDB02 {
         try {
 
             InitDBConn initDBConn = new InitDBConn();
-            Connection conn = initDBConn.connectDB();
+            Connection conn = initDBConn.connectDB(EDbList.JAVA_TRAINING.value());
 
             // Envoi d’un requête générique
             String sql =  "SELECT pdt.nom, pdt.quantite, frs.nom FROM produits pdt LEFT JOIN fournisseurs frs" +
@@ -32,9 +33,10 @@ public class TestDB02 {
                 System.out.println(qtePdt+" "+nomPdt+" du fournisseur "+((nomFrs==null)?"Inconnu":nomFrs));
             }
             res.close();stmt.close();conn.close();
-        }catch (Exception e){
+        } catch (SQLException e) {
             System.out.println("ERROR DB");
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println("Error Code= " + e.getErrorCode());
         }
     }
 }

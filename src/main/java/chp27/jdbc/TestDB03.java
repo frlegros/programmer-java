@@ -13,7 +13,7 @@ public class TestDB03 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
         InitDBConn initDBConn = new InitDBConn();
-        Connection conn = initDBConn.connectDB();
+        Connection conn = initDBConn.connectDB(EDbList.JAVA_TRAINING.value());
 
         // Envoi d’un requête générique
         String sql = "SELECT * FROM produits";

@@ -1,10 +1,8 @@
 package chp27.jdbc;
 
-import com.mysql.jdbc.Driver;
-
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
@@ -17,7 +15,7 @@ public class TestDB01 {
         try {
 
             InitDBConn initDBConn = new InitDBConn();
-            Connection conn = initDBConn.connectDB();
+            Connection conn = initDBConn.connectDB(EDbList.JAVA_TRAINING.value());
 
             // Envoi d’un requête générique
             String sql =  "SELECT nom, quantite from produits" ;
@@ -34,7 +32,7 @@ public class TestDB01 {
             }
             res.close();stmt.close();conn.close();
 
-        }catch (Exception e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
